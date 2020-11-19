@@ -1,0 +1,397 @@
+/*reset*/
+*{
+	padding: 0;
+	margin: 0;
+	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, Sans-serif;
+	
+	/*agar perpindahan ke smoth*/
+	scroll-behavior: smooth;
+
+
+}
+
+header nav {
+	width: 100%;
+	margin: auto;
+	display: flex;
+	background-color:#1d1874;
+	justify-content: space-evenly;
+
+}
+
+/*membuat efek ketika disorot menunya*/
+
+header nav ul ::after{
+	content : '';
+	display: block;
+	width: 0;
+	height: 2px;
+	background: white;
+	transition: width .5s;
+
+}
+header nav a:hover::after{
+	width: 100%;
+	transition: width .5s;
+}
+
+/* mengatur logonya */
+.logo {
+	width 150 px
+
+}
+ul{
+
+	width: 500px;
+	display: flex;
+	justify-content: space-evenly;
+	margin: 20px 150px;
+	list-style: none;
+
+}
+
+ul a{
+	color: white;
+	text-decoration: none;
+	font-weight: bold;
+	font-size: 17px;
+
+}
+
+/*  css jumbotron */
+.jumbotron {
+	position: relative;
+	/*Memasukan gambar*/
+	height: 600px;
+
+	/*untuk agar baickgroundnya diam/fixed*/
+	background-attachment: fixed;
+	overflow: hidden;
+}
+
+.jumbotron-img {
+	width: 100%;
+	position: absolute;
+	top: 0;
+}
+
+.jumbotron::after {
+	content: '';
+	background: linear-gradient(to bottom, rgb(29, 24, 116, 0.9), rgb(29, 24, 116, 0.3));
+	width: 100%;
+	height: 600px;
+	position: absolute;
+	left: 0;
+	top: 0px;
+}
+
+.jumbotron-info {
+	position: relative;
+	z-index: 1;
+}
+
+.jumbotron h1, 
+h4 {
+	text-align: center;
+	color: white;
+}
+.jumbotron h1 {
+	font-size: 50px;
+}
+
+.jumbotron h4 {
+	font-size: 20px;
+}
+
+.jumbotron a, .jumbotron2 a {
+	color: #fff;
+	border: 1px solid #fff;
+	text-decoration: none;
+	padding: 7px;
+	font-size: 0.9em;
+
+}
+/*tombolnya*/
+/*hover ketika diatas */
+.jumbotron a:hover, .jumbotron2 a:hover {
+	background: white;
+	color: black;
+
+}
+
+/*atur gambar gelombangnya*/
+.gelombang{
+	margin-top: 180px;
+}
+
+/*.gelombang img {
+	width: 100%;
+}*/
+
+.container {
+	max-width: 900px;
+	padding-left: 10px;
+	padding-right: 10px;
+	margin: auto;
+}
+
+.penjelasan {
+	margin-top: 200px
+}
+.penjelasan .garis {
+	width: 100px;
+	height: 2px;
+	background: rgb(78, 78, 78);
+	margin: auto;
+}
+
+.penjelasan p {
+	padding: 40px;
+	text-align-last: center;
+}
+.jumbo-kotak {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	gap: 20px;
+	width: 100%;
+	margin: auto;
+	margin-top: 70px;
+}
+
+.kotak {
+	width: 100%!important;
+}
+
+.kotak-konten {
+	background: #1d1874;
+	color: #fff;
+	padding: 20px;
+	display: none;
+	transition: all 0.5s;
+}
+
+.kotak-konten-tampil {
+	display: block;
+}
+
+.kotak-img {
+	overflow: hidden;
+	display: flex;
+	justify-content: center;
+	height: 300px;
+}
+
+.kotak-img img {
+	width: 100%;
+	height: 100%;
+}
+
+.kotak-btn {
+	display: flex;
+	justify-content: center;
+	padding-top: 20px;
+}
+
+.kotak-btn-nya, .blog-btn {
+	background: #1f3874;
+	color: #fff;
+	padding: 13px;
+	font-family: arial;
+	cursor: pointer;
+	font-size: 0.9em;
+	position: static;
+}
+
+.kotak-btn-nya:hover {
+	background: #1d1874;
+}
+
+.destinasi {
+	text-align: center;
+	margin-top: 30px;
+}
+
+.jumbotron2 {
+	overflow: hidden;
+	height: 300px;
+	display: flex;
+	align-content: center;
+	margin: 70px 0;
+}
+
+.jumbotron2::after {
+	content: '';
+	height: 300px;
+	width: 100%;
+	position: absolute;
+	background: #1d1874;
+	opacity: 0.8;
+}
+
+.jumbotron2-img {
+	width: 100%;
+}
+
+.jumbotron2-info {
+	position: absolute;
+	z-index: 1;
+	color: #fff;
+	left: 0;
+	width: 100%;
+	height: 300px;
+	margin-top: 50px;
+}
+
+
+.blog {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	gap: 30px;
+}
+
+.blog-kotak {
+	height: 300px;
+	overflow-y: hidden;
+}
+
+.blog-img {
+	height: 250px;
+	overflow: hidden;
+	display: flex;
+	align-content: center;
+}
+
+.blog-kotak img {
+	width: 100%;
+}
+
+.blog-body {
+	box-shadow: 0 0 16px #ddd;
+	background: #fff;
+	position: relative;
+	padding: 20px;
+	z-index: 1s;
+	font-family: arial;
+	font-weight: 300;
+	width: 87%;
+	margin: auto;
+	margin-top: -15px;
+	transition: all 0.3s;
+}
+
+.blog-kotak:hover .blog-body {
+	margin-top: -63px;
+}
+
+.blog-text {
+	color: #333;
+	font-weight: 400;
+	font-size: .8em;
+	padding-top: 15px;
+}
+
+.about {
+	background: #fff;
+	box-shadow: 0 0 10px #ddd;
+	border-radius: 5px;
+	padding: 10px;
+	margin: 0 20px;
+	max-width: 300px;
+	margin: auto;
+	margin-top: 40px;
+}
+
+.about-img {
+	border-radius: 100%;
+	overflow: hidden;
+	width: 200px;
+	height: 200px;
+	margin: auto;
+	display: grid;
+	justify-content: center;
+}
+
+.about-img img {
+	width: 100%;
+}
+
+.medsos {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	gap: 20px;
+}
+
+.medsos img {
+	margin: auto;
+}
+
+footer {
+	background: #1d1874;
+	margin-top: 50px;
+	padding: 20px;
+	text-align: center;
+	color: #fff;
+}
+
+
+/*responsive mobile*/
+@media screen and (max-width: 576px) {
+	body {
+		// overflow-x: hidden;
+	}
+	.menu-toogle {
+		opacity: 1;
+		cursor : pointer;
+	}
+  
+    .menu-togle:hover{
+    	box-shadow: 0 0 40px rgba(0.0,0,0.6);
+    }
+    
+    nav ul{
+     	position: fixed;
+     	left: -100%;
+     	top: 0;
+     	z-index: 999;
+     	width:80%;
+     	height: 100vh;
+     	flex-direction: column;
+     	background: #1d1874;
+     	margin-top: 70px;
+     	text-align: center;
+     	transform: translateX(350px);
+     	transition: 0.8s;
+     	opacity: 0;
+    }	
+    
+    nav ul.aktif{
+     	transform: translateX(0);
+     	opacity: 1
+    }
+      
+    nav.logo {
+
+      	transform: translate(-80px);
+    }
+
+    .jumbotron {
+      	width: 100%;
+    }
+    
+    .jumbotron h1{
+      	margin-top: -30px
+      	font-size: 0.4em!important;
+    }
+
+    .jumbo-kotak {
+    	grid-template-columns: 1fr;
+    }
+
+    .blog {
+    	grid-template-columns: 1fr;
+    }
+
+    .blog-kotak {
+    	margin-bottom: 50px;
+    }
+}

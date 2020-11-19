@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width-device-width, initial-scale-1.0">
+	<title>Majalengka.com</title>
+
+  <!-- Menghubungkaan html ke css -->
+ <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+
+    <!-- Membuat headernya -->
+    <header>
+     	<nav>
+     	  <div class="logo">
+     	    <!-- Mengatur ukuran gambarnya 80px -->
+     	    <img src="img//logomajalengka.png" alt="" width="80px">
+     	  </div>
+
+        <!-- membuat elemen ul dan li -->
+        <ul>
+          <li>
+            <!-- Elemen hyperlink -->
+            <a href="#">Home</a>
+          </li>
+          <li>
+            <!-- Elemen hyperlink -->
+            <a href="#">Destinasi</a>
+          </li>
+          <li>
+            <!-- Elemen hyperlink -->
+            <a href="#">Blog</a>
+          </li>
+          <li>
+            <!-- Elemen hyperlink -->
+            <a href="#">Tentang Kami</a>
+          </li>
+        </ul>
+        
+        <!-- Class menu toggle berfungsi ketika layar dalam ukuran mobile maka menu toggle tersebut akan muncul   -->
+
+        <div class="menu-togle">
+
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+                  
+      </nav> 	
+    </header>
+
+     <main>
+     	<div class="jumbotron">
+        <img src="img/group1.jpg" class="jumbotron-img">
+     	  <!-- tag br agar berfungsi untuk menggunakan space ke atas -->
+     	  <br><br><br><br>
+     	  <!-- tag center berfungsi untuk agar text atau elemen tengah -->
+        <div class="jumbotron-info">
+       	 	
+          <center>
+       	 		<h1>SELAMAT DATANG DIWISATA MAJALENGKA</h1>
+       	 		<H4>ANDA DATANG KAMI SAMBUT</H4>
+       	 		<br><br>
+       	 		<a href="#penjelasan">Kunjungi </a>
+       	 	</center>
+          
+        </div>
+     	</div>
+
+
+      <div class="container">
+        
+     	  <div class="penjelasan" id="penjelasan">
+     	 	  <center>
+     	 		  <img src="img/logomajalengka.png" alt="" width="100px">
+     	 	  </center>
+
+     	  </div>
+        <br>
+       	<p>Sejarah berdirinya Kabupaten Majalengka menemukan titik terang baru. Hal itu seiring dengan terpecahkannya tulisan hanacaraka jawa berbahasa Cirebon kuno yang terdapat di salah satu nisan di pemakaman kuno yang terletak di daerah perbukitan Desa Gunung Wangi, Kecamatan Argapura.
+        Dari hasil penelusuran Komunitas Grup Majalengka Baheula (Grumala), ditemukan bahwa secara tata pemerintahan modern Kabupaten Majalengka lahir pada tahun 1840. Hal itu atas pertimbangan bahwa sebelum menjadi Kabupaten Majalengka, telah ada Kabupaten Maja yang menjadi cikal bakal dari Kabupaten Majalengka yang ada sekarang ini.
+        Kabupaten Maja berdiri pada 1819, dipimpin oleh Rd. Aria Adipati Suria Adiningrat sebagai bupati. Dari catatan itu diketahui bahwa dia menjadi Bupati Maja sekitar 20 tahun, dari 1819 sampai 1839.</p>
+
+       
+        <article>
+       	
+       	  <h1 class="destinasi" id="destinasi">
+            Destinasi
+            <div style="border-bottom: 3px solid black; width: 70px; margin: auto; margin-top: 5px;"></div>
+          </h1>
+
+          <!-- membuat untuk menampung artikel didalam jumbo kotak -->
+       	  <div class="jumbo-kotak">
+
+         		<div class="kotak">
+         			<div class="kotak-img">
+                <img src="img/kebun%20cipasung.jpg">  
+              </div>
+              <div class="kotak-konten" id="kotak1">
+                <h3>Kebun Teh Cipasung</h3><br>
+                      Obyek Wisata Kebun Teh Majalengka Cipasung terletak di desa Cipasung Kecamatan Lemah Sugih, sekitar 52 Km atau 2 jam        berkendara dari pusat kota Majalengka ke sebelah selatan.
+                      Ada dua rute untuk menuju lokasi.  Pertama rute Desa Lemahputih – Borogojol – Cipasung. Kedua jalur Bantarujeg – Cigaleuh – Kalapa Dua – Bangbayang – Cipasung
+                      Bila Anda dari Tasikmalaya, destinasi ini berjarak 48 Km atau dapat ditempuh sekitar 1,5 jam. Dari obyek wisata Pasir Kirisik lurus ke arah Majalengka, lalu belok kiri setelah tugu selamat datang. Bila dari Bandung, Anda bisa berbelok di Simpang Pamoyanan. Dari sana Kebun Teh bisa dicapai dalam waktu 45 menit atau berjarak sekitar 18 KM.
+                      Sementara rute dari Cirebon ke kebun teh Cipasung dapat Anda lihat melalui tautan ini.
+                      Memang jalur menuju ke sana cukup membingungkan bagi orang baru.  Namun jangan khawatir karena banyak papan petunjuk kok.
+                      Anda juga bisa bertanya pada penduduk lokal.  Bila Anda masih bingung, pake aja panduan Google Map. Dijamin nyampe.. hehe..
+                      Belum tersedia angkutan umum ke sana.  Jadi apabila mau ke sana, kita harus menggunakan kendaraan pribadi.  Oya, karena jalannya masih jelek, akan lebih enak apabila Anda menggunakan kendaraan roda dua.
+              </div>
+              <div class="kotak-btn">
+                <a class="kotak-btn-nya kotak-btn-1" onclick="KotakBtn('kotak1')">Lihat detail</a>
+              </div>
+         		</div> 
+
+
+            <div class="kotak">
+              <div class="kotak-img">
+                <img src="img/situ%20cipanten.jpg">  
+              </div>
+              <div class="kotak-konten" id="kotak2">
+                <h3>Situ cipanten</h3><br>
+                      Situ Cipanten Majalengka, Jawa Barat merupakan destinasi wisata alam dengan panorama yang apik. Obyek wisata satu ini jadi salah satu alternatif berlibur masyarakat sekitar atupun juga para traveler. Belakangan, pamor dari Situ Cipanten Majalengka ini naik daun. Hal tersebut berkat banyaknya pengunjung yang mengunggahnya di media sosial. Situ Cipanten ini berada di Desa Gunung Kuning, Kecamatan Sindang, Kabupaten Majalengka. Situ Cipanten ini merupakan danau yang memiliki luas kurang lebih satu hektar. Dahulu, digunakan untuk pengairan dan juga perikanan. Sementara itu sumber air di Situ Cipanten ini berasal dari tujuh mata air, maka dari itu meskipun musim kemarau tiba, tidak akan kering.
+              </div>
+              <div class="kotak-btn">
+                <a class="kotak-btn-nya" onclick="KotakBtn('kotak2')">Lihat detail</a>
+              </div>
+            </div> 
+
+
+            <div class="kotak">
+              <div class="kotak-img">
+                <img src="img/situ%20sangiang.jpg">  
+              </div>
+              <div class="kotak-konten" id="kotak3">
+                <h3>Situ Sangiang</h3><br>
+                      Situ Sangiang menjadi salah satu destinasi wisata di Majalengka yang banyak dikunjungi sat liburan tiba. Ada kisah mistis di balik Situ Sangiang yang asri dengan berbagai pepohonan di sekitarnya. Situ Sangiang ini erat sekali sejarahnya dengan legenda Prabu Talaga Manggung dan kedua anaknya. Talaga Manggung ini sendiri merupakan kerajaan di Majalengka yang diperkirakan ada pada abad ke-15.
+              </div>
+              <div class="kotak-btn">
+                <a class="kotak-btn-nya"  onclick="KotakBtn('kotak3')">Lihat detail</a>
+              </div>
+            </div> 
+
+       	  </div>
+        </article>
+      </div>
+
+
+      <div class="jumbotron2">
+        <img src="img/group2.jpg" class="jumbotron2-img">
+        <div class="jumbotron2-info">
+          <center>
+            <h1>HADIRI EVENT-EVENT SEKARANG</h1>
+            <br></br>
+            <a href="#penjelasan">Kunjungi </a>
+          </center>
+        </div>
+      </div>
+
+
+
+      <div class="container">
+        <h1 class="destinasi" id="destinasi">
+          Blog
+          <div style="border-bottom: 3px solid black; width: 50px; margin: auto; margin-top: 5px;"></div>
+        </h1>
+
+        <br> <br>
+
+        <div class="blog">
+          <div class="blog-kotak">
+            <div class="blog-img">
+              <img src="img/alun%20alun.jpg">
+            </div>
+            <div class="blog-body">
+              <h3>Alun alun Majalengka</h3>
+              <span class="blog-text">Berlibur ke alun alun</span><br><br>
+              <a class="blog-btn">Selengkapnya</a>
+            </div>
+          </div>
+
+          <div class="blog-kotak">
+            <div class="blog-img">
+              <img src="img/tugu%20majalengka.jpg">
+            </div>
+            <div class="blog-body">
+              <h3>Tugu Majalengka</h3>
+              <span class="blog-text">Berlibur ke tugu</span><br><br>
+              <a class="blog-btn">Selengkapnya</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <br><br><br>
+      <h1 class="destinasi" id="destinasi">
+        Tentang kami
+        <div style="border-bottom: 3px solid black; width: 150px; margin: auto; margin-top: 5px;"></div>
+      </h1>
+
+
+      <div class="about">
+        <div class="about-img">
+          <img src="img/hasan.jpg">
+        </div>
+        <br>
+        <div class="about-body">
+          <div class="medsos">
+            <img src="img/instagram.jpg" style="width: 45px;">
+            <img src="img/facebook.png" style="width: 35px;">
+            <img src="img/gmaillogin.png" style="width: 35px;">
+          </div>
+        </div>
+      </div>
+      
+
+
+   </main>
+
+
+   <footer>
+     &copy; copyright 2020
+   </footer>
+       
+      
+     <!-- Menggabungkan html ke java script-->
+     <script src="script.js"></script>
+
+</body>
+</html>
